@@ -13,6 +13,6 @@ instance1 = ec2.Instance('i-06280b0a82c1bc1c9')
 instance1.start()
 instance2 = ec2.Instance('i-0b937a7b63f78abf2')
 instance2.start()
-
+print("add")
 print("Starting Ec2 instances..")
 
