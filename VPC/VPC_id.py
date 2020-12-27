@@ -1,7 +1,7 @@
 import boto3
 import json
 
-with open('..\\..\\config.json') as f:
+with open('..\\config.json') as f:
    data = json.load(f)
 
 session = boto3.Session(

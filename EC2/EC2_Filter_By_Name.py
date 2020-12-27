@@ -9,7 +9,6 @@ session = boto3.Session(
     aws_secret_access_key=data["aws_secret_access_key"])
 
 ec2 = session.client('ec2', region_name='us-east-2')
-#instance1 = ec2.Instance('i-06280b0a82c1bc1c9')
 All_inst_dict = ec2.describe_instances()
 
 for dict_index in range(len(All_inst_dict["Reservations"])):
